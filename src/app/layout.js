@@ -25,12 +25,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="border h-screen flex flex-col">
+        <div className="h-screen flex flex-col">
           <Heading></Heading>
-          <div className="flex-grow">{children}</div>
-          <div className="">
-            <Footer></Footer>
-          </div>
+            <div className="flex-grow">{children}</div>
+          <Footer></Footer>
         </div>
       </body>
     </html>
